@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/open_activity_mi"
+        android:title="@string/open_activity"
+        app:showAsAction="always"
+    />
+    <item
+        android:id="@+id/implicity_intents_mi"
+        android:title="@string/implicity_intents">
+        <menu>
+            <item
+                android:id="@+id/view_mi"
+                android:title="@string/open_browser" />
+            <item
+                android:id="@+id/call_mi"
+                android:title="@string/call_a_number"
+            />
+            <item
+                android:id="@+id/dial_mi"
+                android:title="@string/open_dialer"
+            />
+            <item
+                android:id="@+id/pick_mi"
+                android:title="@string/pick_an_image"
+            />
+            <item
+                android:id="@+id/chooser_mi"
+                android:title="@string/choose_a_viewer"
+            />
+        </menu>
+    </item>
+</menu>
