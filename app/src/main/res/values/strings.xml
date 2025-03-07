@@ -11,4 +11,5 @@
     <string name="choose_a_viewer">Choose a viewer</string>
     <string name="implicity_intents">Implicity intents</string>
     <string name="return_and_close">Return and close</string>
+    <string name="initial_value">Initial value</string>
 </resources>
