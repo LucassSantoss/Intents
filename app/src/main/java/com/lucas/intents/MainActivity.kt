@@ -16,10 +16,6 @@ import com.lucas.intents.Extras.PARAMETER_EXTRA
 import com.lucas.intents.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    companion object {
-        private const val PARAMETER_REQUEST_CODE = 0
-    }
-
     private lateinit var parameterArl: ActivityResultLauncher<Intent>
 
     private val amb: ActivityMainBinding by lazy {
@@ -34,8 +30,8 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.subtitle = localClassName
 
         amb.parameterBt.setOnClickListener {
-            // Intent explicita porque define a classe que será executada para tratar a Intent
-            Intent(this, ParameterActivity::class.java).let {
+            // Deixa a carga do SO escolher a Activity com base no IntentFilter definida no` AndroidManifest.xml
+            Intent("OPEN_PARAMETER_ACTIVITY_ACTION").let {
                 // Colocando valor na Intent qeu será enviada para a ParameterActivity
                 it.putExtra(PARAMETER_EXTRA, amb.parameterTv.text.toString())
                 parameterArl.launch(it)
