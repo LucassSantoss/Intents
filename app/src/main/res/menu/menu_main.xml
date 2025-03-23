@@ -5,7 +5,7 @@
         android:id="@+id/open_activity_mi"
         android:title="@string/open_activity"
         app:showAsAction="always"
-    />
+        android:icon="@drawable/ic_open_browser" />
     <item
         android:id="@+id/implicity_intents_mi"
         android:title="@string/implicity_intents">
